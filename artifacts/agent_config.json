@@ -1,0 +1,38 @@
+{
+  "chains": {
+    "goerli": {
+      "name": "goerli",
+      "domain": 5,
+      "addresses": {
+        "mailbox": "0xCC737a94FecaeC165AbCf12dED095BB13F037685",
+        "interchainGasPaymaster": "0x7C50e38fa28c84a3D8D5625877EC436752C1feAd",
+        "validatorAnnounce": "0x3Fc742696D5dc9846e04f7A1823D92cb51695f9a"
+      },
+      "protocol": "ethereum",
+      "finalityBlocks": 2,
+      "connection": {
+        "type": "http"
+      },
+      "index": {
+        "from": 8039005
+      }
+    },
+    "mantleTest": {
+      "name": "mantleTest",
+      "domain": 5001,
+      "addresses": {
+        "mailbox": "0x571D7F5b766e76726Db046E41C4987272F95cbB9",
+        "interchainGasPaymaster": "0xb7350170D4e520670dEE93628C3d697f4Db8590e",
+        "validatorAnnounce": "0xB0209cc8F2470b3A6A6073e81B8bF400f5bD6e9b"
+      },
+      "protocol": "ethereum",
+      "finalityBlocks": 1,
+      "connection": {
+        "type": "http"
+      },
+      "index": {
+        "from": 3793732
+      }
+    }
+  }
+}

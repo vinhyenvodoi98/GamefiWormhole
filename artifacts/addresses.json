@@ -1,0 +1,20 @@
+{
+  "mantleTest": {
+    "multisigIsm": "0xBc679a253914AaA6d019a19da3A5304D75Ed0298",
+    "proxyAdmin": "0xADBAdaFA8c7423281B9f69f49592FBd4b919C8eb",
+    "mailbox": "0x571D7F5b766e76726Db046E41C4987272F95cbB9",
+    "validatorAnnounce": "0xB0209cc8F2470b3A6A6073e81B8bF400f5bD6e9b",
+    "testRecipient": "0x2e6b0f4f4351E826dfc2BBC73Fb5945907Ea8aef",
+    "storageGasOracle": "0xF61766b606a9075B18d174079D14cBafd279AF0C",
+    "interchainGasPaymaster": "0xb7350170D4e520670dEE93628C3d697f4Db8590e",
+    "defaultIsmInterchainGasPaymaster": "0x58026cFd5A128d524727545e9c765Cf63c702e33"
+  },
+  "goerli": {
+    "multisigIsm": "0x379cB30a6c221aEA9AFD1d98F732EC255b1Cc772",
+    "testRecipient": "0x3DC1c7e53BC6D4522f15B7CEDBA9aE2FA52B4D33",
+    "proxyAdmin": "0x3973A52689F92859B594ef3dC797aA940BC9CB34",
+    "storageGasOracle": "0x6415AC7C09EE4869D1390A9c1497a6b6aECbE7E7",
+    "interchainGasPaymaster": "0x7C50e38fa28c84a3D8D5625877EC436752C1feAd",
+    "defaultIsmInterchainGasPaymaster": "0xF600523a23253Dcb891D8240cA2AB2a2d818f57F"
+  }
+}
