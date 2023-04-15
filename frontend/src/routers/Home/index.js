@@ -1,12 +1,10 @@
 import { Row, Col, Input, Button } from 'antd';
 import { ApolloClient, InMemoryCache, HttpLink, ApolloProvider, useQuery, gql } from '@apollo/client';
 
-const API_KEY = 'YOUR_API_KEY';
-
 const httpLink = new HttpLink({
-  uri: 'https://example.com/graphql',
+  uri: 'https://api.airstack.xyz/gql',
   headers: {
-    Authorization: `Bearer ${API_KEY}`
+    Authorization: process.env.REACT_APP_AIRSTACK_API
   }
 });
 
@@ -39,21 +37,41 @@ const GET_USERS_QUERY = gql`
 `;
 
 
-const Home = () => {
+const Hole = () => {
+  const { loading, error, data } = useQuery(GET_USERS_QUERY);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
+
   return (
     <Row justify="center" align="middle" style={{ height: '100vh' }}>
-      <Col xs={20} sm={16} md={12} lg={8} xl={6}>
-        <div style={{ textAlign: 'center' }}>
-        <h1>Linaio Gate</h1>
-        <p>Crosschain collateral</p>
-        </div>
-        <Input placeholder="0xaaaa" style={{ marginBottom: 16 }} />
-        <Button type="primary" block>
-            Submit
-        </Button>
-      </Col>
+    <Col xs={20} sm={16} md={12} lg={8} xl={6}>
+      <div style={{ textAlign: 'center' }}>
+      <h1>Linaio Gate</h1>
+      <p>Crosschain collateral</p>
+      </div>
+      <Input placeholder="0xaaaa" style={{ marginBottom: 16 }} />
+      <Button type="primary" block>
+          Submit
+      </Button>
+      {console.log(data)}
+    </Col>
     </Row>
   );
 }
+
+const Home = () => {
+  return (
+    <ApolloProvider client={client}>
+      <Hole />
+    </ApolloProvider>
+  );
+};
+
 
 export default Home;
