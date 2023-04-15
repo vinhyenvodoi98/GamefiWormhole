@@ -1,0 +1,3 @@
+[submodule "hyperlane-deploy"]
+	path = hyperlane-deploy
+	url = https://github.com/hyperlane-xyz/hyperlane-deploy
