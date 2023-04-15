@@ -17,8 +17,8 @@
         "from": 8039005
       }
     },
-    "mantleTest": {
-      "name": "mantleTest",
+    "mantletest": {
+      "name": "mantletest",
       "domain": 5001,
       "addresses": {
         "mailbox": "0x571D7F5b766e76726Db046E41C4987272F95cbB9",
@@ -31,7 +31,7 @@
         "type": "http"
       },
       "index": {
-        "from": 3793732
+        "from": 3804193
       }
     }
   }
